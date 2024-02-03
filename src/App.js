@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          учим реакт
+          Vlad kryt
         </a>
       </header>
     </div>
