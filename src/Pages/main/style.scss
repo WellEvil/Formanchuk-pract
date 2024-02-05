@@ -1,0 +1,45 @@
+.container {
+    position: relative;
+  }
+  
+  .burger-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Перемещаем бургер в левый верхний угол */
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    top: calc(20px + 25px); /* Верхний отступ: от верхнего края листа + высота бургера */
+    left: calc(20px + 25px); /* Левый отступ: от левого края листа + ширина бургера */
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .open {
+    transform: rotate(0deg);
+  }
+  
+  .menu.open {
+    display: flex;
+  }
+  
