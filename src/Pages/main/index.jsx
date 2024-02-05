@@ -1,7 +1,7 @@
 import React from 'react'
 
 const MainPage = () => {
-    return <div>123</div>
+    return <div>Home</div>
 }
 
 export default MainPage
