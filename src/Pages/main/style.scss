@@ -3,7 +3,7 @@
 }
 
 .burger-menu {
-  position: absolute;
+  position: fixed;
   top: 30px;
   left: 30px;
   cursor: pointer;
@@ -19,7 +19,7 @@
 
 .menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: calc(57px);
   left: calc(70px);
   flex-direction: column;
@@ -48,9 +48,9 @@
 }
 
 .buttons-container {
-  position: fixed;
+  position: absolute;
   top: 30px;
-  right: 20px;
+  right: 50px;
   z-index: 999;
   /* Чтобы кнопки всегда находились поверх других элементов */
 }
@@ -76,17 +76,17 @@
 .logo-container {
   position: absolute;
   top: 30px;
-  left: 43%;
+  left: 44%;
 }
 
-.text-container {
+.textmain-container {
   position: absolute;
   top: 400px;
   left: 30px;
   display: flex;
 }
 
-.text {
+.textmain {
   font-weight: bold;
   font-size: 40px;
   left: 70px;
@@ -95,7 +95,7 @@
   /* Выравниваем текст по левой стороне */
 }
 
-.text span {
+.textmain span {
   white-space: normal;
 }
 
@@ -111,7 +111,7 @@
   left: 40%;
 }
 
-.social-container {
+.socialmain-container {
   position: absolute;
   left: 30px;
   /* Отступаем слева на 20 пикселей */
@@ -119,13 +119,13 @@
   /* Отступаем вниз на 650 пикселей */
 }
 
-.social-icons {
+.socialmain-icons {
   margin-top: 10px;
   /* Добавляем отступ между текстом и иконками */
   left: 50px;
 }
 
-.social-icons img {
+.socialmain-icons img {
   width: 25px;
   /* Размер иконок */
   margin-right: 10px;
@@ -140,7 +140,7 @@
 
 .otzivi-container {
   position: absolute;
-  top: 1500px;
+  top: 1550px;
   left: 100px;
 }
 
@@ -149,7 +149,7 @@
   width: 850px;
   height: 60px;
   position: absolute;
-  top: 2015px;
+  top: 2065px;
   left: 50%;
   transform: translateX(-50%);
   /* Сдвигаем кнопку влево на половину ее ширины для центрирования */
@@ -169,7 +169,7 @@
 
 .more-about {
   position: absolute;
-  top: 2150px;
+  top: 2200px;
   /* Опустим блок поближе к кнопкам */
   left: 30px;
   text-align: left;

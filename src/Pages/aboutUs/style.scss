@@ -1,0 +1,109 @@
+.container {
+    position: relative;
+}
+
+.burger-menu {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.line {
+    width: 40px;
+    height: 4px;
+    background-color: #E40134;
+    margin: 5px 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: calc(57px);
+    left: calc(70px);
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 2px solid #E40134;
+    /* Добавляем красную обводку */
+}
+
+
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: normal;
+    transition: font-weight 0.2s;
+}
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+.menu.open {
+    display: flex;
+}
+
+.logo-container {
+    position: absolute;
+    top: 30px;
+    left: 44%;
+}
+
+.company-history-container {
+    position: absolute;
+    top: 190px;
+    left: 30px;
+    text-align: left;
+    max-width: 35vw;
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.semi-bold-text {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.company-prime-container {
+    position: absolute;
+    top: 190px;
+    right: 30px;
+    text-align: right;
+    max-width: 33vw;
+}
+
+
+.history-button {
+    position: absolute;
+    top: 410px;
+    left: 700px;
+}
+
+.history-button img {
+    width: 100px;
+    /* Задайте желаемый размер */
+    height: auto;
+    cursor: pointer;
+    /* Изменение вида курсора при наведении */
+    transition: filter 0.3s;
+    /* Добавление плавного эффекта при наведении */
+}
+
+.history-button span {
+    display: block;
+    /* Размещение текста под изображением */
+    margin-top: 5px;
+    /* Отступ между изображением и текстом */
+}
+
+.history-button:hover img {
+    filter: brightness(1.2);
+    /* Немного увеличиваем яркость изображения при наведении */
+}

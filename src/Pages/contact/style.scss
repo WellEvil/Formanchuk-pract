@@ -1,0 +1,115 @@
+.container {
+    position: relative;
+}
+
+.burger-menu {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.line {
+    width: 40px;
+    height: 4px;
+    background-color: #E40134;
+    margin: 5px 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: calc(57px);
+    left: calc(70px);
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 2px solid #E40134;
+    /* Добавляем красную обводку */
+}
+
+
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: normal;
+    transition: font-weight 0.2s;
+}
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+.menu.open {
+    display: flex;
+}
+
+.buttons-container {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    z-index: 999;
+    /* Чтобы кнопки всегда находились поверх других элементов */
+}
+
+.textContact-container {
+    position: absolute;
+    top: 290px;
+    left: 27%;
+    display: flex;
+}
+
+.textContact {
+    font-weight: bold;
+    font-size: 20px;
+    left: 70px;
+    margin-right: 100px;
+    text-align: left;
+    /* Выравниваем текст по левой стороне */
+}
+
+.contact-container {
+    position: absolute;
+    top: 400px;
+    left: 90px;
+    margin-bottom: 301px;
+}
+
+.social-container {
+    position: absolute;
+    left: 1200px;
+    top: 80px;
+}
+
+.social-icons {
+    margin-top: 10px;
+    right: 50px;
+}
+
+.social-icons img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.textphone-container {
+    position: absolute;
+    top: 40px;
+    left: 1234px;
+}
+
+.textphone span:first-child {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2; /* Устанавливаем высоту строки */
+}
+
+.textphone span:last-child {
+    font-size: 16px;
+    line-height: 1.2; /* Устанавливаем высоту строки */
+}
+
+
+

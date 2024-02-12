@@ -33,8 +33,8 @@ const MainPage = () => {
         <img src={'/assets/logo.svg'} className="logo" style={{ width: '200px', height: 'auto' }} />
       </div>
 
-      <div className="text-container">
-        <span className="text">
+      <div className="textmain-container">
+        <span className="textmain">
           <span>Жизнь проще</span><br />
           <span>в комфортной</span><br />
           <span>обуви</span>
@@ -49,9 +49,9 @@ const MainPage = () => {
         <img src={'/assets/banner2.svg'} className="banner1" style={{ width: '700px', height: 'auto' }} />
       </div>
 
-      <div class="social-container">
+      <div class="socialmain-container">
         <p>Подписывайтесь в соцсетях</p>
-        <div class="social-icons">
+        <div class="socialmain-icons">
           <img src="/assets/vk.svg" />
           <img src="/assets/instagram.svg" />
           <img src="/assets/telegram.svg" />
