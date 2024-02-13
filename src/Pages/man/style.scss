@@ -26,7 +26,6 @@
     background-color: #f9f9f9;
     padding: 15px;
     border: 2px solid #E40134;
-    /* Добавляем красную обводку */
   }
   
   
@@ -51,8 +50,7 @@
     position: absolute;
     top: 30px;
     right: 50px;
-    z-index: 999;
-    /* Чтобы кнопки всегда находились поверх других элементов */
+    z-index: 999; /* Чтобы кнопки всегда находились поверх других элементов */
   }
 
   .text-container {
@@ -68,7 +66,6 @@
     left: 70px;
     margin-right: 100px;
     text-align: left;
-    /* Выравниваем текст по левой стороне */
   }
   
   .text span {

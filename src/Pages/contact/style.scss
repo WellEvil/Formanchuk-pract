@@ -26,7 +26,6 @@
     background-color: #f9f9f9;
     padding: 15px;
     border: 2px solid #E40134;
-    /* Добавляем красную обводку */
 }
 
 
@@ -68,7 +67,6 @@
     left: 70px;
     margin-right: 100px;
     text-align: left;
-    /* Выравниваем текст по левой стороне */
 }
 
 .contact-container {
@@ -103,12 +101,12 @@
 .textphone span:first-child {
     font-weight: bold;
     font-size: 18px;
-    line-height: 1.2; /* Устанавливаем высоту строки */
+    line-height: 1.2;
 }
 
 .textphone span:last-child {
     font-size: 16px;
-    line-height: 1.2; /* Устанавливаем высоту строки */
+    line-height: 1.2;
 }
 
 

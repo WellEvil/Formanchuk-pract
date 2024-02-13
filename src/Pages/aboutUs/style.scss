@@ -26,7 +26,6 @@
     background-color: #f9f9f9;
     padding: 15px;
     border: 2px solid #E40134;
-    /* Добавляем красную обводку */
 }
 
 
@@ -88,22 +87,16 @@
 
 .history-button img {
     width: 100px;
-    /* Задайте желаемый размер */
     height: auto;
     cursor: pointer;
-    /* Изменение вида курсора при наведении */
     transition: filter 0.3s;
-    /* Добавление плавного эффекта при наведении */
 }
 
 .history-button span {
     display: block;
-    /* Размещение текста под изображением */
     margin-top: 5px;
-    /* Отступ между изображением и текстом */
 }
 
 .history-button:hover img {
-    filter: brightness(1.2);
-    /* Немного увеличиваем яркость изображения при наведении */
+    filter: brightness(1.8);
 }

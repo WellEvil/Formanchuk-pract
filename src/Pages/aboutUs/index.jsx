@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './style.scss'; // Импортируем стили
+import './style.scss';
 
 const AboutUsPage = () => {
     const [isOpen, setIsOpen] = useState(false);
