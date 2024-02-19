@@ -2,14 +2,14 @@
   position: relative;
 }
 
-.burger-menu {
-  position: fixed;
+.mainburger-menu {
+  position: absolute;
   top: 30px;
   left: 30px;
   cursor: pointer;
 }
 
-.line {
+.mainline {
   width: 40px;
   height: 4px;
   background-color: #E40134;
@@ -46,7 +46,7 @@
   display: flex;
 }
 
-.buttons-container {
+.mainbuttons-container {
   position: absolute;
   top: 30px;
   right: 50px;
@@ -54,7 +54,7 @@
   /* Чтобы кнопки всегда находились поверх других элементов */
 }
 
-.login-button,
+.mainlogin-button,
 .register-button {
   background-color: #E40134;
   color: white;
@@ -70,7 +70,7 @@
   background-color: #FF3355;
 }
 
-.logo-container {
+.mainlogo-container {
   position: absolute;
   top: 30px;
   left: 44%;
@@ -198,4 +198,58 @@
 .arrow-icon {
   width: 30px;
   height: auto;
+}
+
+@media (max-width: 992px) {
+  /* Код для мобильных устройств */
+
+  .mainburger-menu {
+    position: absolute;
+    top: 30px;
+    left: 22px;
+    width: 50px;
+    height: 46px;
+    cursor: pointer;
+  }
+  .mainline {
+    width: 40px;
+    height: 4px;
+    background-color: #E40134;
+    margin: 11px 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  .menu {
+    display: none;
+    position: fixed;
+    top: calc(80px) !important;
+    left: calc(5px) !important;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 2px !important;
+    border: 2px solid #E40134;
+  }
+
+  .mainlogo-container {
+    position: absolute;
+    top: 8px;
+    left: 120px;
+  }
+
+  .mainlogo {
+    width: 124px !important;
+    height: auto !important;
+  }
+
+  .mainbuttons-container {
+    position: absolute;
+    top: 18px;
+    right: 50px;
+    z-index: 999;
+  }
+
+  .register-button {
+    display: none; /* Скрываем кнопку "Регистрация" */
+  }
+
 }

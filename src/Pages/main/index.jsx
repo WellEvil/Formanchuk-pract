@@ -11,10 +11,10 @@ const MainPage = () => {
 
   return (
     <div className="container">
-      <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
+      <div className={`mainburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div className="mainline"></div>
+        <div className="mainline"></div>
+        <div className="mainline"></div>
       </div>
       <div className={`menu main-menu ${isOpen ? 'open' : ''}`}>
         <Link to="/">Главная</Link>
@@ -24,13 +24,13 @@ const MainPage = () => {
         <Link to="/aboutUs">О нас</Link>
       </div>
 
-      <div className="buttons-container">
-        <button className="login-button">Вход</button>
+      <div className="mainbuttons-container">
+        <button className="mainlogin-button">Вход</button>
         <button className="register-button">Регистрация</button>
       </div>
 
-      <div className="logo-container">
-        <img src={'/assets/logo.svg'} className="logo" style={{ width: '200px', height: 'auto' }} />
+      <div className="mainlogo-container">
+        <img src={'/assets/logo.svg'} className="mainlogo" style={{ width: '200px', height: 'auto' }} />
       </div>
 
       <div className="textmain-container">
