@@ -41,11 +41,11 @@ const MainPage = () => {
         </span>
       </div>
 
-      <div className="banner1-container">
+      <div className="mainbanner1-container">
         <img src={'/assets/banner1.svg'} className="banner1" style={{ width: '600px', height: 'auto' }} />
       </div>
 
-      <div className="banner2-container">
+      <div className="mainbanner2-container">
         <img src={'/assets/banner2.svg'} className="banner1" style={{ width: '700px', height: 'auto' }} />
       </div>
 

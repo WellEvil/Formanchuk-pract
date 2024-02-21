@@ -95,13 +95,13 @@
   white-space: normal;
 }
 
-.banner1-container {
+.mainbanner1-container {
   position: absolute;
   top: 320px;
   left: 43%;
 }
 
-.banner2-container {
+.mainbanner2-container {
   position: absolute;
   top: 650px;
   left: 40%;
@@ -211,6 +211,7 @@
     height: 46px;
     cursor: pointer;
   }
+
   .mainline {
     width: 40px;
     height: 4px;
@@ -249,7 +250,141 @@
   }
 
   .register-button {
-    display: none; /* Скрываем кнопку "Регистрация" */
+    display: none;
+    /* Скрываем кнопку "Регистрация" */
   }
+
+  .textmain-container {
+    position: absolute;
+    top: 235px;
+    left: 30px;
+    display: flex;
+  }
+
+  .textmain {
+    font-weight: bold;
+    font-size: 40px;
+    left: 70px;
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  .mainbanner1-container {
+    position: absolute;
+    top: 410px;
+    left: 25px;
+  }
+
+  .banner1 {
+    width: 320px !important;
+    height: auto !important;
+  }
+
+  .mainbanner2-container {
+    position: absolute;
+    top: 590px;
+    left: 27px;
+  }
+
+  .banner2 {
+    width: 320px !important;
+    height: auto !important;
+  }
+
+  .socialmain-container {
+    position: absolute;
+    left: 80px;
+    top: 880px;
+  }
+
+  .socialmain-icons {
+    margin-top: 10px;
+    left: 50px;
+  }
+
+  .socialmain-icons img {
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  .banner3-container {
+    position: absolute;
+    top: 725px;
+    left: 18px;
+  }
+
+  .banner3 {
+    width: 340px !important;
+    height: auto !important;
+  }
+
+  .otzivi-container {
+    position: absolute;
+    top: 1010px;
+    left: 18px;
+  }
+
+  .otzivi {
+    width: 340px !important;
+    height: auto !important;
+  }
+
+  .submit-button {
+    display: block;
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    top: 1145px;
+    left: 185px;
+    transform: translateX(-50%);
+    background-color: #ccc;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 6px;
+    font-weight: bold;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .more-about {
+    position: absolute;
+    top: 1200px;
+    left: 25px;
+    text-align: left;
+  }
+
+  .more-about h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+
+  .buttons button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 40px;
+    font-size: 12px;
+    background-color: #ccc;
+    border: 2px solid black;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .arrow-icon {
+    width: 20px !important;
+    height: auto !important;
+  }
+
 
 }
