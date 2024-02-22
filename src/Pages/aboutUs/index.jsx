@@ -11,10 +11,10 @@ const AboutUsPage = () => {
 
     return (
         <div className="container">
-            <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
+            <div className={`usburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                <div className="usline"></div>
+                <div className="usline"></div>
+                <div className="usline"></div>
             </div>
             <div className={`menu main-menu ${isOpen ? 'open' : ''}`}>
                 <Link to="/">Главная</Link>
@@ -24,8 +24,8 @@ const AboutUsPage = () => {
                 <Link to="/aboutUs">О нас</Link>
             </div>
 
-            <div className="logo-container">
-                <img src={'/assets/logo.svg'} className="logo" style={{ width: '200px', height: 'auto' }} alt="Логотип магазина" />
+            <div className="uslogo-container">
+                <img src={'/assets/logo.svg'} className="uslogo" style={{ width: '200px', height: 'auto' }} alt="Логотип магазина" />
             </div>
 
             <div className="company-history-container">

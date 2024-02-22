@@ -11,10 +11,10 @@ const WomenPage = () => {
 
     return (
         <div className="container">
-            <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
+            <div className={`womenburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                <div className="womenline"></div>
+                <div className="womenline"></div>
+                <div className="womenline"></div>
             </div>
             <div className={`menu main-menu ${isOpen ? 'open' : ''}`}>
                 <Link to="/">Главная</Link>
@@ -24,24 +24,32 @@ const WomenPage = () => {
                 <Link to="/aboutUs">О нас</Link>
             </div>
 
-            <div className="buttons-container">
-                <button className="login-button">Избранное</button>
+            <div className="womenbuttons-container">
+                <button className="womenlogin-button">Избранное</button>
             </div>
 
-            <div className="logo-container">
-                <img src={'/assets/logo.svg'} className="logo" style={{ width: '200px', height: 'auto' }} alt="Логотип магазина" />
+            <div className="womenlogo-container">
+                <img src={'/assets/logo.svg'} className="womenlogo" style={{ width: '200px', height: 'auto' }} alt="Логотип магазина" />
             </div>
 
-            <div className="text-container">
-                <span className="text">
+            <div className="womentext-container">
+                <span className="womentext">
                     <span>Вы сможете</span><br />
                     <span>подобрать обувь на</span><br />
                     <span>любой вкус!</span>
                 </span>
             </div>
 
-        <div className="WomenCollection-container">
-        <img src={'/assets/womenCollection.svg'} className="WomenCollection" style={{ width: '1300px', height: 'auto' }} />
+        <div className="womenCollection-container">
+        <img src={'/assets/womenCollection.svg'} className="womenCollection" style={{ width: '1300px', height: 'auto' }} />
+        </div>
+
+        <div className="mobilewomenCollection-container">
+        <img src={'/assets/mobilewomencollection.svg'} className="mobilewomenCollection" style={{ width: '200px', height: 'auto' }} />
+        </div>
+
+        <div className="womenlike-container">
+        <img src={'/assets/like.svg'} className="womenlike" style={{ width: '50px', height: 'auto' }} />
         </div>
 
 

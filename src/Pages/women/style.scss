@@ -2,14 +2,14 @@
     position: relative;
   }
   
-  .burger-menu {
+  .womenburger-menu {
     position: fixed;
     top: 30px;
     left: 30px;
     cursor: pointer;
   }
   
-  .line {
+  .womenline {
     width: 40px;
     height: 4px;
     background-color: #E40134;
@@ -47,7 +47,7 @@
     display: flex;
   }
   
-  .buttons-container {
+  .womenbuttons-container {
     position: absolute;
     top: 30px;
     right: 50px;
@@ -55,14 +55,24 @@
     /* Чтобы кнопки всегда находились поверх других элементов */
   }
 
-  .text-container {
+  .womenlogin-button {
+    background-color: #E40134;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .womentext-container {
     position: absolute;
     top: 150px;
     left: 30px;
     display: flex;
   }
   
-  .text {
+  .womentext {
     font-weight: bold;
     font-size: 40px;
     left: 70px;
@@ -75,8 +85,103 @@
     white-space: normal;
   }
 
-  .WomenCollection-container {
+  .womenCollection-container {
     position: absolute;
     top: 400px;
     left: 110px;
+  }
+
+  .womenlogo-container {
+    position: absolute;
+    top: 30px;
+    left: 44%;
+  }
+
+  .mobilewomenCollection-container {
+    display: none;
+  }
+  
+  .womenlike-container {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    /* Код для мобильных устройств */
+  
+    .womenburger-menu {
+      position: absolute;
+      top: 30px;
+      left: 22px;
+      width: 50px;
+      height: 46px;
+      cursor: pointer;
+    }
+  
+    .womenline {
+      width: 40px;
+      height: 4px;
+      background-color: #E40134;
+      margin: 11px 0;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+  
+    .menu {
+      display: none;
+      position: fixed;
+      top: calc(80px) !important;
+      left: calc(5px) !important;
+      flex-direction: column;
+      background-color: #f9f9f9;
+      padding: 2px !important;
+      border: 2px solid #E40134;
+    }
+  
+    .womenlogo-container {
+      position: absolute;
+      top: 8px;
+      left: 120px;
+    }
+  
+    .womenlogo {
+      width: 124px !important;
+      height: auto !important;
+    }
+  
+    .womenbuttons-container {
+      display: none;
+    }
+  
+    .womentext-container {
+      position: absolute;
+      top: 240px;
+      left: 22px;
+      display: flex;
+    }
+  
+    .womentext {
+      font-weight: bold;
+      font-size: 45px;
+      left: 70px;
+      margin-right: 50px;
+      text-align: left;
+    }
+  
+    .womenCollection-container {
+      display: none;
+    }
+  
+    .mobilewomenCollection-container {
+      display: flex;
+      position: absolute;
+      left: 90px;
+      top: 500px;
+    }
+  
+    .womenlike-container {
+      display: flex;
+      position: absolute;
+      left: 300px;
+      top: 30px;
+    }
+
   }

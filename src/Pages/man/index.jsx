@@ -11,10 +11,10 @@ const ManPage = () => {
 
     return (
         <div className="container">
-            <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
+            <div className={`manburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                <div className="manline"></div>
+                <div className="manline"></div>
+                <div className="manline"></div>
             </div>
             <div className={`menu main-menu ${isOpen ? 'open' : ''}`}>
                 <Link to="/">Главная</Link>
@@ -24,16 +24,16 @@ const ManPage = () => {
                 <Link to="/aboutUs">О нас</Link>
             </div>
 
-            <div className="buttons-container">
-                <button className="login-button">Избранное</button>
+            <div className="manbuttons-container">
+                <button className="manlogin-button">Избранное</button>
             </div>
 
-            <div className="logo-container">
-                <img src={'/assets/logo.svg'} className="logo" style={{ width: '200px', height: 'auto' }} alt="Логотип магазина" />
+            <div className="manlogo-container">
+                <img src={'/assets/logo.svg'} className="manlogo" style={{ width: '200px', height: 'auto' }} alt="Логотип магазина" />
             </div>
 
-            <div className="text-container">
-                <span className="text">
+            <div className="mantext-container">
+                <span className="mantext">
                     <span>Вы сможете</span><br />
                     <span>подобрать обувь на</span><br />
                     <span>любой вкус!</span>
@@ -42,6 +42,14 @@ const ManPage = () => {
 
         <div className="manCollection-container">
         <img src={'/assets/manCollection.svg'} className="manCollection" style={{ width: '1300px', height: 'auto' }} />
+        </div>
+
+        <div className="mobilemanCollection-container">
+        <img src={'/assets/mobilemanCollection.svg'} className="mobilemanCollection" style={{ width: '200px', height: 'auto' }} />
+        </div>
+
+        <div className="manlike-container">
+        <img src={'/assets/like.svg'} className="manlike" style={{ width: '50px', height: 'auto' }} />
         </div>
 
 

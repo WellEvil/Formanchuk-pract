@@ -2,14 +2,14 @@
     position: relative;
 }
 
-.burger-menu {
+.contactburger-menu {
     position: fixed;
     top: 30px;
     left: 30px;
     cursor: pointer;
 }
 
-.line {
+.contactline {
     width: 40px;
     height: 4px;
     background-color: #E40134;
@@ -109,5 +109,93 @@
     line-height: 1.2;
 }
 
+.mobile-container {
+    display: none;
+}
 
+.contactlogo-container {
+    position: absolute;
+    top: 30px;
+    left: 44%;
+}
 
+@media (max-width: 992px) {
+    /* Код для мобильных устройств */
+
+    .contactburger-menu {
+        position: absolute;
+        top: 30px;
+        left: 22px;
+        width: 50px;
+        height: 46px;
+        cursor: pointer;
+    }
+
+    .contactline {
+        width: 40px;
+        height: 4px;
+        background-color: #E40134;
+        margin: 11px 0;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        top: calc(80px) !important;
+        left: calc(5px) !important;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        padding: 2px !important;
+        border: 2px solid #E40134;
+    }
+
+    .contactlogo-container {
+        position: absolute;
+        top: 8px;
+        left: 120px;
+    }
+
+    .contactlogo {
+        width: 124px !important;
+        height: auto !important;
+    }
+
+    .textContact-container {
+        position: absolute;
+        top: 239px;
+        left: 10px;
+        display: flex;
+    }
+
+    .textContact {
+        font-weight: bold;
+        font-size: 25px;
+        left: 80px;
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    .contact-container {
+        display: none;
+    }
+
+    .social-container {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .textphone-container {
+        display: none;
+    }
+
+    .mobile-container {
+        display: flex;
+        position: absolute;
+        left: 90px;
+        top: 400px;
+    }
+}

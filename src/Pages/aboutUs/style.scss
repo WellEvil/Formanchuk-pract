@@ -2,14 +2,14 @@
     position: relative;
 }
 
-.burger-menu {
+.usburger-menu {
     position: fixed;
     top: 30px;
     left: 30px;
     cursor: pointer;
 }
 
-.line {
+.usline {
     width: 40px;
     height: 4px;
     background-color: #E40134;
@@ -46,7 +46,7 @@
     display: flex;
 }
 
-.logo-container {
+.uslogo-container {
     position: absolute;
     top: 30px;
     left: 44%;
@@ -99,4 +99,88 @@
 
 .history-button:hover img {
     filter: brightness(1.8);
+}
+
+@media (max-width: 992px) {
+    /* Код для мобильных устройств */
+
+    .usburger-menu {
+        position: absolute;
+        top: 30px;
+        left: 22px;
+        width: 50px;
+        height: 46px;
+        cursor: pointer;
+    }
+
+    .usline {
+        width: 40px;
+        height: 4px;
+        background-color: #E40134;
+        margin: 11px 0;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        top: calc(80px) !important;
+        left: calc(5px) !important;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        padding: 2px !important;
+        border: 2px solid #E40134;
+    }
+
+    .uslogo-container {
+        position: absolute;
+        top: 8px;
+        left: 120px;
+    }
+
+    .uslogo {
+        width: 124px !important;
+        height: auto !important;
+    }
+
+    .company-history-container {
+        position: absolute;
+        top: 920px;
+        left: 30px;
+        text-align: left;
+        max-width: 80vw;
+    }
+
+    .bold-text {
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .semi-bold-text {
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    .company-prime-container {
+        position: absolute;
+        top: 150px;
+        left: 30px;
+        text-align: left;
+        max-width: 300vw;
+    }
+
+
+    .history-button {
+        position: absolute;
+        top: 810px;
+        left: 140px;
+    }
+
+    .history-button img {
+        width: 100px;
+        height: auto;
+        cursor: pointer;
+        transition: filter 0.3s;
+    }
+
 }

@@ -11,10 +11,10 @@ const ContactPage = () => {
 
     return (
         <div className="container">
-            <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
+            <div className={`contactburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                <div className="contactline"></div>
+                <div className="contactline"></div>
+                <div className="contactline"></div>
             </div>
             <div className={`menu main-menu ${isOpen ? 'open' : ''}`}>
                 <Link to="/">Главная</Link>
@@ -24,8 +24,8 @@ const ContactPage = () => {
                 <Link to="/aboutUs">О нас</Link>
             </div>
 
-            <div className="logo-container">
-                <img src={'/assets/logo.svg'} className="logo" style={{ width: '200px', height: 'auto' }} alt="Логотип магазина" />
+            <div className="contactlogo-container">
+                <img src={'/assets/logo.svg'} className="contactlogo" style={{ width: '200px', height: 'auto' }} alt="Логотип магазина" />
             </div>
 
             <div className="textContact-container">
@@ -52,6 +52,10 @@ const ContactPage = () => {
                     <span>Телефон офиса:</span><br />
                     <span>+7(385)82-35-77</span><br />
                 </span>
+            </div>
+
+            <div className="mobile-container">
+                <img src={'/assets/mobileContact.svg'} className="mobile" style={{ width: '200px', height: 'auto' }} />
             </div>
 
 
